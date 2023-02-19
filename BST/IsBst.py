@@ -48,4 +48,4 @@ array = [19,8,3,15,34,17,22,73,65]
 for i in array:
     bst.insert(i)
 res = bst.isBST()
-print("is BST: ", res )
+print("is BST : ", res )
