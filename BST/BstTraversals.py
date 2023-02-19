@@ -52,7 +52,21 @@ class BinaryST:
             self.rchild.post_order()
         print(self.data,end=" ")
         
+
+    def level_order(self):
+        node = self
+        q=[]
+        q.append(node)
+        while q:
+            root = q.pop(0)
+            print(root.data)
+            if root.lchild is not None:
+                q.append(root.lchild)
+
+            if root.rchild is not None:
+                q.append(root.rchild)
         
+
     def min_node(self):
         current = self
         while current.lchild:

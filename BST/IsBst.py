@@ -11,7 +11,7 @@ class BST:
             return
         if self.data == data:
             return
-        if self.data > data:
+        if self.data < data:
             if self.lchild:
                 self.lchild.insert(data)
             else:
